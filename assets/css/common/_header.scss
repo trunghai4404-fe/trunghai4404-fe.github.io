@@ -28,6 +28,11 @@
     gap: 80px;
     list-style: none;
     margin: 0;
+    padding: 0;
+
+    @include Responsive(MOBILE) {
+      gap: 32px;
+    }
   }
 
   &__nav-item {
@@ -35,6 +40,10 @@
     font-weight: 400;
     color: #475569;
     transition: color 0.3s ease;
+
+    @include Responsive(MOBILE) {
+      font-size: 14px;
+    }
 
 
     a {

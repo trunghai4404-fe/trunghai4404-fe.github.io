@@ -85,8 +85,6 @@
                 font-weight: 600;
                 text-decoration: none;
 
-
-
                 a {
                     color: white;
                     text-decoration: none;
@@ -119,12 +117,25 @@
                 text-align: center;
                 text-decoration: none;
                 color: black;
+                animation: rotateIcon 9s linear infinite;
 
                 .icon-wrapper {
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
                     overflow: hidden;
+                }
+
+                &:nth-child(1) {
+                    animation-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: 3s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: 6s;
                 }
             }
         }
@@ -152,6 +163,10 @@
                 font-weight: 700;
                 color: white;
                 margin: 0;
+
+                @include Responsive(MOBILE) {
+                    font-size: 40px;
+                }
             }
 
             &__description {
@@ -164,6 +179,7 @@
 
                 @include Responsive(MOBILE) {
                     font-size: 16px;
+                    padding-right: 0;
                 }
             }
         }
@@ -173,10 +189,10 @@
         display: grid;
         grid-template-columns: 1fr minmax(300px, 320px);
         gap: 24px;
-        padding-block: 80px;
+        padding-top: 40px;
 
         @include Responsive(MOBILE) {
-            flex-direction: column;
+            grid-template-columns: 1fr;
             gap: 16px;
         }
 
@@ -207,6 +223,10 @@
             grid-auto-rows: auto auto;
             row-gap: 32px;
             column-gap: 16px;
+
+            @include Responsive(MOBILE) {
+                grid-template-columns: 1fr;
+            }
 
         }
 
@@ -323,5 +343,21 @@
 
     to {
         --angle: 360deg;
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    /* xoay nhiều vòng (3 vòng = 1080deg) */
+    30% {
+        transform: rotate(1080deg);
+    }
+
+    /* giữ nguyên để chờ icon tiếp theo */
+    100% {
+        transform: rotate(1080deg);
     }
 }

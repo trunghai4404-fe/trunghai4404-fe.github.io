@@ -25,6 +25,10 @@
         grid-template-columns: repeat(3, 1fr);
         margin-top: 24px;
 
+        @include Responsive(MOBILE) {
+            grid-template-columns: 1fr;
+        }
+
         .projects-item {
             display: flex;
             flex-direction: column;

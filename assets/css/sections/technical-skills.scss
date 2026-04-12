@@ -1,36 +1,38 @@
 .technical-skills {
-    padding: 32px 16px;
-    gap: 16px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(177, 179, 186, 0.759);
-    border-radius: 24px;
-
-
-    &__title {
-        font-size: 32px;
-        font-weight: 600;
-        margin: 0;
-    }
-
-    &__list {
-        display: flex;
+    .technical-skill {
+        padding: 32px 0;
+        border: 1px solid rgba(177, 179, 186, 0.759);
+        border-radius: 24px;
         gap: 16px;
-        flex-wrap: wrap;
-        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
+        align-items: center;
 
-    &__item {
-        font-size: 16px;
-        font-weight: 500;
-        padding: 12px 24px;
-        background: rgb(222 233 252 / 22%);
-        border: 1px solid #3b7cecb1;
-        margin: 0;
-        border-radius: 50px;
+
+        &__title {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        &__list {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__item {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px 24px;
+            background: rgb(222 233 252 / 22%);
+            border: 1px solid #3b7cecb1;
+            margin: 0;
+            border-radius: 50px;
+        }
     }
 }
