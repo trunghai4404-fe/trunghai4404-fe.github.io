@@ -1,0 +1,15 @@
+@import "./common/common", "./common/header", "./common/variable";
+
+
+// .main-bg {
+//     background: black;
+//     color: black;
+// }
+
+
+
+@import "./sections/introduce.scss";
+@import "./sections/technical-skills.scss";
+@import "./sections/projects.scss";
+
+@import "./common/footer";

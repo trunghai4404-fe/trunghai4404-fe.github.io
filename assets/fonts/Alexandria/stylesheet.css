@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Regular.eot');
+    src: url('Alexandria-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Regular.woff2') format('woff2'),
+        url('Alexandria-Regular.woff') format('woff'),
+        url('Alexandria-Regular.ttf') format('truetype'),
+        url('Alexandria-Regular.svg#Alexandria-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-ExtraBold.eot');
+    src: url('Alexandria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-ExtraBold.woff2') format('woff2'),
+        url('Alexandria-ExtraBold.woff') format('woff'),
+        url('Alexandria-ExtraBold.ttf') format('truetype'),
+        url('Alexandria-ExtraBold.svg#Alexandria-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Black.eot');
+    src: url('Alexandria-Black.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Black.woff2') format('woff2'),
+        url('Alexandria-Black.woff') format('woff'),
+        url('Alexandria-Black.ttf') format('truetype'),
+        url('Alexandria-Black.svg#Alexandria-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Medium.eot');
+    src: url('Alexandria-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Medium.woff2') format('woff2'),
+        url('Alexandria-Medium.woff') format('woff'),
+        url('Alexandria-Medium.ttf') format('truetype'),
+        url('Alexandria-Medium.svg#Alexandria-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-SemiBold.eot');
+    src: url('Alexandria-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-SemiBold.woff2') format('woff2'),
+        url('Alexandria-SemiBold.woff') format('woff'),
+        url('Alexandria-SemiBold.ttf') format('truetype'),
+        url('Alexandria-SemiBold.svg#Alexandria-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Light.eot');
+    src: url('Alexandria-Light.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Light.woff2') format('woff2'),
+        url('Alexandria-Light.woff') format('woff'),
+        url('Alexandria-Light.ttf') format('truetype'),
+        url('Alexandria-Light.svg#Alexandria-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Thin.eot');
+    src: url('Alexandria-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Thin.woff2') format('woff2'),
+        url('Alexandria-Thin.woff') format('woff'),
+        url('Alexandria-Thin.ttf') format('truetype'),
+        url('Alexandria-Thin.svg#Alexandria-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Bold.eot');
+    src: url('Alexandria-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Bold.woff2') format('woff2'),
+        url('Alexandria-Bold.woff') format('woff'),
+        url('Alexandria-Bold.ttf') format('truetype'),
+        url('Alexandria-Bold.svg#Alexandria-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Regular_1.eot');
+    src: url('Alexandria-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-Regular_1.woff2') format('woff2'),
+        url('Alexandria-Regular_1.woff') format('woff'),
+        url('Alexandria-Regular_1.ttf') format('truetype'),
+        url('Alexandria-Regular_1.svg#Alexandria-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-ExtraLight.eot');
+    src: url('Alexandria-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Alexandria-ExtraLight.woff2') format('woff2'),
+        url('Alexandria-ExtraLight.woff') format('woff'),
+        url('Alexandria-ExtraLight.ttf') format('truetype'),
+        url('Alexandria-ExtraLight.svg#Alexandria-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

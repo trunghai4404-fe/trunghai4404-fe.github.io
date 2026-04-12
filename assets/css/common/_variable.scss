@@ -1,0 +1,695 @@
+$color_main: #fd3f00;
+$color_green: #0f8a4d;
+$color_gray: #475569;
+$color_text: #1d2939;
+$color_black: #000000;
+$color_orange: #eaae50;
+$color_border: #d5cdc0;
+$color-hover: #fff2ec;
+
+$secondary: #fdddc9;
+$success: #ffae26;
+$warning: #fec84b;
+$danger: #ef6820;
+
+$bg_white: #ffffff;
+$bg_light_orange: #fff3ee;
+$bg_light_green: #edf8f1;
+$border_light: #e7ecf0;
+$text_muted: #71717a;
+$font_main: "Alexandria";
+$font_title: "Alexandria";
+
+// Variables in Media queries
+// Max-width
+$X375: 376px;
+$X48: 480px;
+$XS: 575px;
+
+// Min-width
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+$X14: 1400px;
+$X17: 1700px;
+$X19: 1921px;
+
+//Max-width
+$IPAD: 1199px;
+$MAX991: 991px;
+$MOBILE: 767px;
+
+// Media queries
+@mixin Responsive($canvas) {
+  @if $canvas == X375 {
+    @media only screen and (max-width: $X375) {
+      @content;
+    }
+  } @else if $canvas == X48 {
+    @media only screen and (max-width: $X48) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (min-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (min-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  } @else if $canvas == X14 {
+    @media only screen and (min-width: $X14) {
+      @content;
+    }
+  } @else if $canvas == X17 {
+    @media only screen and (min-width: $X17) {
+      @content;
+    }
+  } @else if $canvas == X19 {
+    @media only screen and (min-width: $X19) {
+      @content;
+    }
+  } @else if $canvas == IPAD {
+    @media only screen and (max-width: $IPAD) {
+      @content;
+    }
+  } @else if $canvas == MAX991 {
+    @media only screen and (max-width: $MAX991) {
+      @content;
+    }
+  } @else if $canvas == MOBILE {
+    @media only screen and (max-width: $MOBILE) {
+      @content;
+    }
+  }
+}
+
+$mb20: 20px;
+$mb24: 24px;
+$mb30: 30px;
+$mb32: 32px;
+$mb40: 40px;
+$mb48: 48px;
+$mb60: 60px;
+$mb80: 80px;
+$mb100: 100px;
+@mixin Margin($margins) {
+  @if $margins == mb20 {
+    margin-bottom: 20px;
+    @include Responsive(X14) {
+      margin-bottom: 19px;
+    }
+    @include Responsive(X13) {
+      margin-bottom: 18px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 17px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 16px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 15.5px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 15px;
+    }
+  } @else if $margins == mb24 {
+    margin-bottom: 24px;
+    @include Responsive(X14) {
+      margin-bottom: 23px;
+    }
+    @include Responsive(X13) {
+      margin-bottom: 22px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 21px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 20px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 18px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 16px;
+    }
+  } @else if $margins == mb30 {
+    margin-bottom: 30px;
+    @include Responsive(X14) {
+      margin-bottom: 28px;
+    }
+    @include Responsive(X13) {
+      margin-bottom: 26px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 24px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 22px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 20px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 18px;
+    }
+  } @else if $margins == mb32 {
+    margin-bottom: 32px;
+    @include Responsive(X14) {
+      margin-bottom: 30px;
+    }
+    @include Responsive(X13) {
+      margin-bottom: 28px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 26px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 24px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 22px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 20px;
+    }
+  } @else if $margins == mb40 {
+    margin-bottom: 40px;
+    @include Responsive(XS) {
+      margin-bottom: 28px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 30px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 32px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 34px;
+    }
+    @include Responsive(XL) {
+      margin-bottom: 35px;
+    }
+    @include Responsive(X14) {
+      margin-bottom: 38px;
+    }
+    @include Responsive(X17) {
+      margin-bottom: 39px;
+    }
+    @include Responsive(X19) {
+      margin-bottom: 40px;
+    }
+  } @else if $margins == mb48 {
+    margin-bottom: 48px;
+    @include Responsive(XS) {
+      margin-bottom: 30px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 32px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 34px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 36px;
+    }
+    @include Responsive(XL) {
+      margin-bottom: 38px;
+    }
+    @include Responsive(X14) {
+      margin-bottom: 40px;
+    }
+    @include Responsive(X17) {
+      margin-bottom: 45px;
+    }
+    @include Responsive(X19) {
+      margin-bottom: 48px;
+    }
+  } @else if $margins == mb60 {
+    margin-bottom: 60px;
+    @include Responsive(XS) {
+      margin-bottom: 38px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 40px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 45px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 48px;
+    }
+    @include Responsive(XL) {
+      margin-bottom: 50px;
+    }
+    @include Responsive(X14) {
+      margin-bottom: 52px;
+    }
+    @include Responsive(X17) {
+      margin-bottom: 55px;
+    }
+    @include Responsive(X19) {
+      margin-bottom: 60px;
+    }
+  } @else if $margins == mb80 {
+    margin-bottom: 80px;
+    @include Responsive(X17) {
+      margin-bottom: 80px;
+    }
+    @include Responsive(X14) {
+      margin-bottom: 75px;
+    }
+    @include Responsive(X13) {
+      margin-bottom: 70px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 60px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 50px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 40px;
+    }
+  } @else if $margins == mb100 {
+    margin-bottom: 100px;
+    @include Responsive(XS) {
+      margin-bottom: 50px;
+    }
+    @include Responsive(SM) {
+      margin-bottom: 55px;
+    }
+    @include Responsive(MD) {
+      margin-bottom: 60px;
+    }
+    @include Responsive(LG) {
+      margin-bottom: 65px;
+    }
+    @include Responsive(XL) {
+      margin-bottom: 70px;
+    }
+    @include Responsive(X14) {
+      margin-bottom: 80px;
+    }
+    @include Responsive(X17) {
+      margin-bottom: 90px;
+    }
+    @include Responsive(X19) {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@mixin font_16 {
+  font-size: 16px;
+
+  @include Responsive(SM) {
+    font-size: 14px;
+  }
+  @include Responsive(X48) {
+    font-size: 12px;
+  }
+}
+@mixin font_18 {
+  font-size: 18px;
+
+  @include Responsive(SM) {
+    font-size: 16px;
+  }
+}
+
+@mixin font_20 {
+  font-size: 20px;
+
+  @include Responsive(XS) {
+    font-size: 16px;
+  }
+  @include Responsive(SM) {
+    font-size: 16.5px;
+  }
+  @include Responsive(MD) {
+    font-size: 17px;
+  }
+  @include Responsive(LG) {
+    font-size: 17.5px;
+  }
+  @include Responsive(XL) {
+    font-size: 18px;
+  }
+  @include Responsive(X14) {
+    font-size: 18.5px;
+  }
+  @include Responsive(X17) {
+    font-size: 19px;
+  }
+  @include Responsive(X19) {
+    font-size: 20px;
+  }
+}
+
+@mixin font_22 {
+  font-size: 22px;
+
+  @include Responsive(XS) {
+    font-size: 18px;
+  }
+  @include Responsive(XL) {
+    font-size: 20px;
+  }
+  @include Responsive(XXL) {
+    font-size: 22px;
+  }
+}
+
+@mixin font_24 {
+  font-size: 24px;
+
+  @include Responsive(XS) {
+    font-size: 16px;
+  }
+  @include Responsive(SM) {
+    font-size: 16px;
+  }
+  @include Responsive(MD) {
+    font-size: 16px;
+  }
+  @include Responsive(XL) {
+    font-size: 24px;
+  }
+  @include Responsive(X14) {
+    font-size: 24px;
+  }
+  @include Responsive(X17) {
+    font-size: 24px;
+  }
+  @include Responsive(X19) {
+    font-size: 24px;
+  }
+}
+
+@mixin font_28 {
+  font-size: 28px;
+
+  @include Responsive(XS) {
+    font-size: 20px;
+  }
+  @include Responsive(SM) {
+    font-size: 22px;
+  }
+  @include Responsive(MD) {
+    font-size: 23px;
+  }
+  @include Responsive(LG) {
+    font-size: 24px;
+  }
+  @include Responsive(XL) {
+    font-size: 25px;
+  }
+  @include Responsive(X14) {
+    font-size: 26px;
+  }
+  @include Responsive(X17) {
+    font-size: 27px;
+  }
+  @include Responsive(X19) {
+    font-size: 28px;
+  }
+}
+@mixin font_30 {
+  font-size: 30px;
+
+  @include Responsive(XS) {
+    font-size: 16px;
+  }
+  @include Responsive(SM) {
+    font-size: 22px;
+  }
+  @include Responsive(MD) {
+    font-size: 22px;
+  }
+  @include Responsive(LG) {
+    font-size: 23px;
+  }
+  @include Responsive(XL) {
+    font-size: 25px;
+  }
+  @include Responsive(X14) {
+    font-size: 30px;
+  }
+  @include Responsive(X17) {
+    font-size: 30px;
+  }
+  @include Responsive(X19) {
+    font-size: 30px;
+  }
+}
+@mixin font_34 {
+  font-size: 34px;
+
+  @include Responsive(XS) {
+    font-size: 24px;
+  }
+  @include Responsive(SM) {
+    font-size: 25px;
+  }
+  @include Responsive(MD) {
+    font-size: 26px;
+  }
+  @include Responsive(LG) {
+    font-size: 28px;
+  }
+  @include Responsive(XL) {
+    font-size: 30px;
+  }
+  @include Responsive(X14) {
+    font-size: 32px;
+  }
+  @include Responsive(X17) {
+    font-size: 34px;
+  }
+  @include Responsive(X19) {
+    font-size: 35px;
+  }
+}
+
+@mixin font_36 {
+  font-size: 36px;
+
+  @include Responsive(XS) {
+    font-size: 30px;
+  }
+  @include Responsive(SM) {
+    font-size: 30px;
+  }
+  @include Responsive(MD) {
+    font-size: 30px;
+  }
+  @include Responsive(LG) {
+    font-size: 30px;
+  }
+  @include Responsive(XL) {
+    font-size: 36px;
+  }
+  @include Responsive(X14) {
+    font-size: 36px;
+  }
+  @include Responsive(X17) {
+    font-size: 36px;
+  }
+  @include Responsive(X19) {
+    font-size: 36px;
+  }
+}
+
+@mixin font_48 {
+  font-size: 48px;
+
+  @include Responsive(XS) {
+    font-size: 30px;
+  }
+  @include Responsive(SM) {
+    font-size: 40px;
+  }
+  @include Responsive(MD) {
+    font-size: 40px;
+  }
+  @include Responsive(LG) {
+    font-size: 44px;
+  }
+  @include Responsive(XL) {
+    font-size: 45px;
+  }
+  @include Responsive(X14) {
+    font-size: 46px;
+  }
+  @include Responsive(X17) {
+    font-size: 48px;
+  }
+  @include Responsive(X19) {
+    font-size: 48px;
+  }
+}
+
+@mixin font_56 {
+  font-size: 56px;
+
+  @include Responsive(SM) {
+    font-size: 26px;
+  }
+  @include Responsive(LG) {
+    font-size: 32px;
+  }
+  @include Responsive(XL) {
+    font-size: 44px;
+  }
+  @include Responsive(XXL) {
+    font-size: 48px;
+  }
+}
+
+@mixin font_60 {
+  font-size: 60px;
+
+  @include Responsive(XS) {
+    font-size: 35px;
+  }
+  @include Responsive(SM) {
+    font-size: 42px;
+  }
+  @include Responsive(MD) {
+    font-size: 45px;
+  }
+  @include Responsive(LG) {
+    font-size: 50px;
+  }
+  @include Responsive(XL) {
+    font-size: 52px;
+  }
+  @include Responsive(X14) {
+    font-size: 54px;
+  }
+  @include Responsive(X17) {
+    font-size: 58px;
+  }
+  @include Responsive(X19) {
+    font-size: 60px;
+  }
+}
+
+@mixin font_64 {
+  font-size: 64px;
+
+  @include Responsive(XL) {
+    font-size: 50px;
+  }
+  @include Responsive(XXL) {
+    font-size: 44px;
+  }
+
+  @include Responsive(LG) {
+    font-size: 40px;
+  }
+  @include Responsive(MD) {
+    font-size: 32px;
+  }
+  @include Responsive(SM) {
+    font-size: 24px;
+  }
+}
+
+@mixin font_72 {
+  font-size: 72px;
+
+  @include Responsive(XS) {
+    font-size: 50px;
+  }
+  @include Responsive(SM) {
+    font-size: 55px;
+  }
+  @include Responsive(MD) {
+    font-size: 60px;
+  }
+  @include Responsive(XL) {
+    font-size: 62px;
+  }
+  @include Responsive(X14) {
+    font-size: 65px;
+  }
+  @include Responsive(X17) {
+    font-size: 70px;
+  }
+  @include Responsive(X19) {
+    font-size: 72px;
+  }
+}
+
+@mixin font_88 {
+  font-size: 88px;
+
+  @include Responsive(XS) {
+    font-size: 50px;
+  }
+  @include Responsive(SM) {
+    font-size: 60px;
+  }
+  @include Responsive(MD) {
+    font-size: 65px;
+  }
+  @include Responsive(LG) {
+    font-size: 68px;
+  }
+  @include Responsive(XL) {
+    font-size: 70px;
+  }
+  @include Responsive(X14) {
+    font-size: 75px;
+  }
+  @include Responsive(X17) {
+    font-size: 80px;
+  }
+  @include Responsive(X19) {
+    font-size: 88px;
+  }
+}
+@mixin font_96 {
+  font-size: 96px;
+
+  @include Responsive(XS) {
+    font-size: 55px;
+  }
+  @include Responsive(SM) {
+    font-size: 60px;
+  }
+  @include Responsive(MD) {
+    font-size: 70px;
+  }
+  @include Responsive(LG) {
+    font-size: 75px;
+  }
+  @include Responsive(XL) {
+    font-size: 85px;
+  }
+  @include Responsive(X14) {
+    font-size: 88px;
+  }
+  @include Responsive(X17) {
+    font-size: 92px;
+  }
+  @include Responsive(X19) {
+    font-size: 96px;
+  }
+}
