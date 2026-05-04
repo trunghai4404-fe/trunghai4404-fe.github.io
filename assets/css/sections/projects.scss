@@ -103,6 +103,7 @@
                     display: flex;
                     justify-content: space-between;
                     margin-top: auto;
+                    align-items: end;
 
                     .projects-role {
                         font-size: 12px;
@@ -110,9 +111,35 @@
                         text-transform: uppercase;
                         margin: 0;
                     }
+
+                    .projects-links a {
+                        display: inline-block;
+                        padding: 4px 8px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #fff;
+                        background: #ff4d4f;
+                        border-radius: 20px;
+
+                        animation: pulseScale 1.6s ease-in-out infinite;
+                    }
                 }
             }
 
         }
+    }
+}
+
+@keyframes pulseScale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.88);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
