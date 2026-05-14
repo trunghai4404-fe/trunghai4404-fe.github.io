@@ -2,6 +2,8 @@
     .technical-skill {
         padding: 32px 0;
         border: 1px solid rgba(177, 179, 186, 0.759);
+        background: rgba(30, 32, 38, 0.591);
+        backdrop-filter: blur(8px);
         border-radius: 24px;
         gap: 16px;
         color: white;
@@ -15,14 +17,40 @@
             font-size: 32px;
             font-weight: 600;
             margin: 0;
+            margin-bottom: 16px;
         }
 
         &__list {
             display: flex;
+            flex-direction: column;
             gap: 16px;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+        }
+
+        &__item-group {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divider {
+            width: 70%;
+            height: 1px;
+            background: rgba(177, 179, 186, 0.759);
+            margin: 10px 0;
+        }
+
+        .divider--short {
+            width: 50%;
+            height: 1px;
+            background: rgba(177, 179, 186, 0.759);
+            margin: 10px 0;
+            align-self: center;
         }
 
         &__item {

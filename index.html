@@ -15,6 +15,7 @@
             <ul class="site-header__nav-list">
                 <li class="site-header__nav-item active"><a href="#introduce">Introduce</a></li>
                 <li class="site-header__nav-item"><a href="#technical-skills">Technical Skills</a></li>
+                <li class="site-header__nav-item"><a href="#work-experience">Work Experience</a></li>
                 <li class="site-header__nav-item"><a href="#projects">Projects</a></li>
             </ul>
         </nav>
@@ -132,15 +133,161 @@
             <div class="technical-skill">
                 <h2 class="technical-skill__title">Technical Arsenal</h2>
                 <div class="technical-skill__list">
-                    <p class="technical-skill__item">HTML5</p>
-                    <p class="technical-skill__item">CSS/SCSS</p>
-                    <p class="technical-skill__item">JavaScript</p>
-                    <p class="technical-skill__item">ReactJs</p>
-                    <p class="technical-skill__item">NextJs</p>
-                    <p class="technical-skill__item">Taiwind Css</p>
-                    <p class="technical-skill__item">Responsive Design</p>
-                    <p class="technical-skill__item">Git / GitHub</p>
-                    <p class="technical-skill__item">UI/UX Principles</p>
+                    <div class="technical-skill__item-group">
+                        <p class="technical-skill__item">HTML5</p>
+                        <p class="technical-skill__item">JavaScript</p>
+                        <p class="technical-skill__item">TypeScript</p>
+                        <p class="technical-skill__item">ReactJs</p>
+                        <p class="technical-skill__item">NextJs</p>
+                        <p class="technical-skill__item">Axios</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="technical-skill__item-group">
+                        <p class="technical-skill__item">CSS/SCSS</p>
+                        <p class="technical-skill__item">Tailwind Css</p>
+                        <p class="technical-skill__item">Responsive Design</p>
+                        <p class="technical-skill__item">UI/UX Principles</p>
+                        <p class="technical-skill__item">Ant Design</p>
+                        <p class="technical-skill__item">Gsap & Scroll Trigger</p>
+                    </div>
+                    <div class="divider--short"></div>
+                    <div class="technical-skill__item-group">
+                        <p class="technical-skill__item">Git / GitHub</p>
+                        <p class="technical-skill__item">Figma</p>
+                        <p class="technical-skill__item">Jira</p>
+                        <p class="technical-skill__item">Taiga</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="technical-skill__item-group">
+                        <p class="technical-skill__item">PostgreSQL</p>
+                        <p class="technical-skill__item">RESTful APIs</p>
+                        <p class="technical-skill__item">.Net</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="work-experience" class="work-experience container-section padding-section">
+            <div class="work-experience__header">
+                <h2 class="work-experience__title">Work Experience</h2>
+                <p class="work-experience__subtitle">My hands-on journey across real-world projects and personal builds.</p>
+            </div>
+
+            <div class="work-experience__tabs">
+                <button class="work-experience__tab active" data-tab="frontend">
+                    <span class="work-experience__tab-icon">&#9001;</span>
+                    Frontend
+                </button>
+                <button class="work-experience__tab" data-tab="backend">
+                    <span class="work-experience__tab-icon">&#9002;</span>
+                    Backend
+                </button>
+            </div>
+
+            <!-- FRONTEND PANEL -->
+            <div class="work-experience__panel active" data-panel="frontend">
+                <div class="we-timeline">
+
+                    <div class="we-timeline__item">
+                        <div class="we-timeline__dot"></div>
+                        <div class="we-timeline__card">
+                            <div class="we-timeline__card-header">
+                                <div class="we-timeline__icon we-timeline__icon--fe">&#128187;</div>
+                                <div>
+                                    <h3 class="we-timeline__role">Frontend Developer</h3>
+                                    <p class="we-timeline__company">Real-world Projects &middot; Team Collaboration</p>
+                                </div>
+                            </div>
+                            <ul class="we-timeline__desc">
+                                <li>Built and maintained production-grade web applications using <strong>ReactJS</strong>, <strong>Next.js</strong>, and <strong>TypeScript</strong>.</li>
+                                <li>Understood trade-offs between <strong>CSR</strong> (dynamic SPA with ReactJS) and <strong>SSR / SSG</strong> (Next.js) — choosing the right strategy per route for optimal <strong>SEO</strong> and <strong>performance</strong>.</li>
+                                <li>Worked on real-world <strong>e-commerce</strong> platforms (product listing, cart, order flow) and <strong>CMS dashboards</strong> (CRUD tables, role-based access, analytics).</li>
+                                <li>Styled complex UIs with <strong>CSS / SCSS</strong>, <strong>Tailwind CSS</strong>, and <strong>Ant Design</strong>; built fully responsive layouts across all breakpoints.</li>
+                                <li>Integrated RESTful APIs via <strong>Axios</strong>, collaborated via <strong>Git</strong>, and tracked tasks with <strong>Figma</strong>, <strong>Jira</strong>, and <strong>Taiga</strong>.</li>
+                            </ul>
+                            <div class="we-timeline__tags">
+                                <span class="we-tag we-tag--react">ReactJS</span>
+                                <span class="we-tag we-tag--next">Next.js</span>
+                                <span class="we-tag we-tag--ts">TypeScript</span>
+                                <span class="we-tag">Javascript</span>
+                                <span class="we-tag">SSR / CSR</span>
+                                <span class="we-tag">SEO</span>
+                                <span class="we-tag">E-commerce</span>
+                                <span class="we-tag">CMS</span>
+                                <span class="we-tag">SCSS</span>
+                                <span class="we-tag">AntD</span>
+                                <span class="we-tag">Tailwind</span>
+                                <span class="we-tag">Axios</span>
+                                <span class="we-tag">Git</span>
+                                <span class="we-tag">Figma</span>
+                                <span class="we-tag">Gsap & Scroll Trigger</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="we-timeline__item">
+                        <div class="we-timeline__dot"></div>
+                        <div class="we-timeline__card">
+                            <div class="we-timeline__card-header">
+                                <div class="we-timeline__icon we-timeline__icon--design">&#127912;</div>
+                                <div>
+                                    <h3 class="we-timeline__role">UI / UX &amp; Responsive Web</h3>
+                                    <p class="we-timeline__company">Cross-device Experiences</p>
+                                </div>
+                            </div>
+                            <ul class="we-timeline__desc">
+                                <li>Translated <strong>Figma</strong> design mockups into pixel-perfect, accessible HTML/CSS layouts.</li>
+                                <li>Applied <strong>responsive design principles</strong> with fluid grids, flexbox, and CSS Grid to ensure smooth cross-device rendering.</li>
+                                <li>Optimized <strong>Core Web Vitals</strong> — LCP, CLS, and FID — for production Next.js applications.</li>
+                                <li>Followed <strong>BEM naming convention</strong> and structured SCSS with variables, mixins, and partials for scalable codebases.</li>
+                                <li>Created subtle <strong>micro-animations</strong> and transitions for enhanced user experience.</li>
+                            </ul>
+                            <div class="we-timeline__tags">
+                                <span class="we-tag">Responsive Design</span>
+                                <span class="we-tag">BEM</span>
+                                <span class="we-tag">Flexbox</span>
+                                <span class="we-tag">CSS Grid</span>
+                                <span class="we-tag">Figma</span>
+                                <span class="we-tag">Animations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BACKEND PANEL -->
+            <div class="work-experience__panel" data-panel="backend">
+                <div class="we-timeline">
+
+                    <div class="we-timeline__item">
+                        <div class="we-timeline__dot"></div>
+                        <div class="we-timeline__card">
+                            <div class="we-timeline__card-header">
+                                <div class="we-timeline__icon we-timeline__icon--be">&#9881;</div>
+                                <div>
+                                    <h3 class="we-timeline__role">Backend Developer</h3>
+                                    <p class="we-timeline__company">Personal Projects &middot; .NET Ecosystem</p>
+                                </div>
+                            </div>
+                            <ul class="we-timeline__desc">
+                                <li>Built RESTful APIs with <strong>ASP.NET Core</strong> following clean architecture patterns.</li>
+                                <li>Integrated <strong>Firebase Cloud Messaging</strong> for real-time push notifications on mobile and web.</li>
+                                <li>Implemented <strong>SignalR</strong> for bi-directional real-time communication (live status updates, event broadcasting).</li>
+                                <li>Connected IoT devices via <strong>MQTT</strong> protocol for real-time sensor data streaming.</li>
+                                <li>Designed and managed relational databases, and worked with <strong>Entity Framework Core</strong>.</li>
+                            </ul>
+                            <div class="we-timeline__tags">
+                                <span class="we-tag we-tag--dotnet">.NET Core</span>
+                                <span class="we-tag">REST API</span>
+                                <span class="we-tag">SignalR</span>
+                                <span class="we-tag">MQTT</span>
+                                <span class="we-tag">Firebase</span>
+                                <span class="we-tag">EF Core</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -161,7 +308,7 @@
                             <span>SCSS</span>
                             <span>JavaScript</span>
                         </div>
-                        <h2 class="projects-title">Landing Page</h2>
+                        <h2 class="projects-title">Mebisoft</h2>
                         <p class="projects-desc">
                             Mebisoft is a modern business website providing digital solutions, featuring a clean
                             interface, responsive design, and optimized user experience.
@@ -186,7 +333,7 @@
                             <span>Taiwind Css</span>
                             <span>Antd</span>
                         </div>
-                        <h2 class="projects-title">Ecommerce Website</h2>
+                        <h2 class="projects-title">Mebieco</h2>
                         <p class="projects-desc">
                             A modern e-commerce website providing a seamless shopping experience with a clean interface,
                             responsive design, and optimized performance.
@@ -196,6 +343,29 @@
 
                             <div class="projects-links">
                                 <a target="_blank" href="https://mebieco.vn/">Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="projects-wrapper">
+                        <img src="./assets/images/mebifarm.png" alt="">
+                        <div class="badge-featured">Featured</div>
+                    </div>
+                    <div class="projects-content">
+                        <div class="tech-tags">
+                            <span>NextJs</span>
+                            <span>Taiwind Css</span>
+                        </div>
+                        <h2 class="projects-title">Mebi Farm</h2>
+                        <p class="projects-desc">
+                            High-tech agriculture platform specialising in clean eggs &amp; premium produce. Built on a closed-loop Japanese-standard farming model with full supply-chain transparency and a sustainable, circular agriculture vision.
+                        </p>
+                        <div class="projects-footer">
+                            <div class="projects-role">Role: Frontend Developer</div>
+
+                            <div class="projects-links">
+                                <a target="_blank" href="https://mebifarm.vn/">Live</a>
                             </div>
                         </div>
                     </div>
@@ -223,7 +393,7 @@
                             <div class="projects-role">My project</div>
 
                             <div class="projects-links">
-                                <a target="_blank" href="#"> No Live</a>
+                                <a> No Live</a>
                             </div>
                         </div>
                     </div>
@@ -231,12 +401,30 @@
 
             </div>
         </section>
+
+        
     </main>
     <footer class="site-footer">
         &copy; 2026 My Portfolio. All rights reserved.
     </footer>
     <script src="./assets/js/header.js"></script>
     <script type="module" src="./assets/js/threejs.js"></script>
+    <script>
+        // Work Experience tab switcher
+        (function () {
+            var tabs = document.querySelectorAll('.work-experience__tab');
+            var panels = document.querySelectorAll('.work-experience__panel');
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(function (t) { t.classList.remove('active'); });
+                    panels.forEach(function (p) { p.classList.remove('active'); });
+                    tab.classList.add('active');
+                    var target = tab.getAttribute('data-tab');
+                    document.querySelector('.work-experience__panel[data-panel="' + target + '"]').classList.add('active');
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
